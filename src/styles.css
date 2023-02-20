@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css"
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+    font-family: Akzidenz;
+    src: url(assets/font/Akzidenz-grotesk-bold.ttf);
+}
+
+* {
+    font-family: Akzidenz;
+}
+
+.btn-primary {
+    background-color: rgb(0, 175, 170);
+    border-color: rgb(76, 165, 133);
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 107, 104);
+    border-color: rgb(76, 165, 133);
+}
