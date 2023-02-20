@@ -6,8 +6,8 @@
    padding-left: 20vh;
    padding-right: 20vh;
 }
-.btn-metamask{
-   margin-left: 5vh;
+.navbar-nav{
+   margin-right: 10vh;
 }
 .navbar-toggler {
    color: white !important;
