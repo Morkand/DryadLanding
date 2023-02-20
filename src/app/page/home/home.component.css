@@ -2,5 +2,6 @@
     position: relative;
     background-color: rgb(25, 50, 47);
     z-index: 1;
+    width: 100%;
 }
 
