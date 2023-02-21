@@ -1,4 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @Component({
   selector: 'app-home',
@@ -10,12 +12,14 @@ export class HomeComponent implements AfterViewInit {
   writerTitle1:ElementRef = {} as ElementRef;
   @ViewChild('writerTitle2')
   writerTitle2:ElementRef = {} as ElementRef;
-
+  public countdown = {D:0,H:0,M:0,S:0};
+  
   ngAfterViewInit(): void {
     this.Animation(this.writerTitle1,this.writerTitle1.nativeElement.innerHTML);
     this.InitAnimation(this.writerTitle1);
     this.Animation(this.writerTitle2,this.writerTitle2.nativeElement.innerHTML,100);
     this.InitAnimation(this.writerTitle2);
+    
   }
   private InitAnimation(writer:ElementRef) {
     writer.nativeElement.innerHTML = '';
@@ -30,4 +34,5 @@ export class HomeComponent implements AfterViewInit {
       setTimeout(()=>this.Animation(writer,titleText,speed,i), speed);
     }
   }
-}
+
+ }

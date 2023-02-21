@@ -42,7 +42,18 @@
     animation: fadeIn;
     animation-duration: 6s;
 }
-
+.pantano{
+    background-color:rgba(76, 165, 133,0.4);
+}
+.carousel-countdown {
+    padding-top: -20vw;
+}
+.carousel-countdown-process{
+    padding-top: 18vw;
+}
+.carousel-item.carousel-countdown{
+    padding-top: -80px;
+}
 @media (max-width: 767px) {
     .corousel-banner {
         margin-top: 10vw;

@@ -10,7 +10,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
                 <div class="corousel-banner row">
-                    <div class="corousel-banner1-img d-none col-sm-6 d-md-block col-lg-6">
+                    <div class="corousel-banner-img d-none col-sm-6 d-md-block col-lg-6">
                         <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
                     </div>
                     <div class="corousel-banner-content col-sm-6 col-lg-6">
@@ -31,7 +31,56 @@
                 </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item carousel-countdown " data-bs-interval="2000">
+                <div class="corousel-banner row">
+                    <div class="corousel-banner-content d-none d-md-block col-lg-12">
+                        <div class="corousel-banner-title">
+                            The public ICO first phase will start with 75% discount in relation to second phase:
+                        </div>
+                    </div>   
+                </div>
+                <div class="corousel-banner carousel-countdown-process row">
+                    <div class="corousel-banner-content d-none d-md-block col-lg-3">
+                        <div class="corousel-banner-title">
+                            <circle-progress
+                            [percent]="100"
+                            [title]="[countdown.D.toString()]"
+                            [subtitle]="['Days']"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                    </div>
+                    <div class="corousel-banner-content d-none d-md-block col-lg-3">
+                        <div class="corousel-banner-title">
+                            <circle-progress
+                            [percent]="100"
+                            [title]="[countdown.H.toString()]"
+                            [subtitle]="['Hours']"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                    </div>
+                    <div class="corousel-banner-content d-none d-md-block col-lg-3">
+                        <div class="corousel-banner-title">
+                            <circle-progress
+                            [percent]="100"
+                            [title]="[countdown.M.toString()]"
+                            [subtitle]="['Minutes']"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                    </div>
+                    <div class="corousel-banner-content d-none d-md-block col-lg-3">
+                        <div class="corousel-banner-title">
+                            <circle-progress
+                            [percent]="100"
+                            [title]="[countdown.S.toString()]"
+                            [subtitle]="['Seconds']"
+                            [animationDuration]="300"
+                            ></circle-progress>
+                        </div>
+                    </div>
+                </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
             </div>
             <div class="carousel-item">
