@@ -44,18 +44,18 @@
 }
 .pantano{
     background-color:rgba(76, 165, 133,0.4);
-}
-.carousel-countdown {
-    padding-top: -20vw;
+}    
+.carousel-countdown-title{
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 3vw;
 }
 .carousel-countdown-process{
     padding-top: 18vw;
 }
-.carousel-item.carousel-countdown{
-    padding-top: -80px;
-}
+
 @media (max-width: 767px) {
-    .corousel-banner {
+    .corousel-banner,.carousel-countdown-title {
         margin-top: 10vw;
     }
     .carousel{
@@ -74,7 +74,7 @@
 
 }
 @media (min-width: 767px) and (max-width: 801px) {
-    .corousel-banner {
+    .corousel-banner,.carousel-countdown-title {
         margin-top: 10vw;
     }
     .carousel{
