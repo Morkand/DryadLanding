@@ -1,7 +1,81 @@
-.banner{
+.banner {
     position: relative;
     background-color: rgb(25, 50, 47);
     z-index: 1;
     width: 100%;
 }
 
+.corousel-banner {
+    position: absolute;
+    z-index: 2;
+    padding: 12vw 12vw 0 12vw;
+}
+
+.banner-img {
+    width: 90%;
+}
+
+.carousel-background {
+    position: relative;
+    z-index: 1;
+}
+
+.corousel-banner-title {
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 3vw;
+    padding-top: 4vw;
+}
+
+.banner-img {
+    
+    animation: shakeY;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.corousel-banner-description p{
+
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.corousel-banner-description button{
+    animation: fadeIn;
+    animation-duration: 6s;
+}
+
+@media (max-width: 767px) {
+    .corousel-banner {
+        margin-top: 10vw;
+    }
+    .carousel{
+        height: 100vw;
+    }
+    .carousel-item{
+        height: 100vw;
+        padding: 0 0 0 0;
+    }
+    .carousel-background{
+        width: 100%;
+        height: 100%;
+        transform: rotate(90deg);
+        object-fit: fill;
+    }
+
+}
+@media (min-width: 767px) and (max-width: 801px) {
+    .corousel-banner {
+        margin-top: 10vw;
+    }
+    .carousel{
+        height: 80vw;
+    }
+    .carousel-item{
+        height: 80vw;
+        padding: 0 0 0 0;
+    }
+    .carousel-background{
+        width: 100%;
+        height: 100%;
+    }
+
+}
