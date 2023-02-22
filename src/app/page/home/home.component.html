@@ -31,7 +31,7 @@
                 </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="10000">
                 <div class="corousel-banner row">
                     <div class="corousel-banner-content col-lg-12">
                         <div class="carousel-countdown-title">
@@ -43,7 +43,8 @@
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
                        
                             <circle-progress
-                            [percent]="100"
+                            [maxPercent]="365"
+                            [percent]="countdown.D"
                             [title]="[countdown.D.toString()]"
                             [subtitle]="['Days']"
                             [animationDuration]="300"
@@ -53,7 +54,8 @@
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
                         
                             <circle-progress
-                            [percent]="100"
+                            [maxPercent]="24"
+                            [percent]="countdown.H"
                             [title]="[countdown.H.toString()]"
                             [subtitle]="['Hours']"
                             [animationDuration]="300"
@@ -63,7 +65,8 @@
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
                         
                             <circle-progress
-                            [percent]="100"
+                            [maxPercent]="60"
+                            [percent]="countdown.M"
                             [title]="[countdown.M.toString()]"
                             [subtitle]="['Minutes']"
                             [animationDuration]="300"
@@ -73,7 +76,8 @@
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
                        
                             <circle-progress
-                            [percent]="100"
+                            [maxPercent]="60"
+                            [percent]="countdown.S"
                             [title]="[countdown.S.toString()]"
                             [subtitle]="['Seconds']"
                             [animationDuration]="300"
@@ -81,9 +85,41 @@
                         </div>
                 
                 </div>
+                <div class="corousel-banner corousel-banner-progressbar row">
+                    <div class="corousel-banner-content col-md-3">
+                          <h5 class="text-end p-2">Total Supply:</h5>
+                    </div>
+                    <div class="corousel-banner-content text-center col-md-9">
+                        <div class="progress text-end">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" style="background-color:rgba(0, 175, 170,1)" [style.width.%]="((5*100)/100000)" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          5/100000
+                    </div>
+                </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="10000">
+                <div class="corousel-banner row">
+                    <div class="corousel-banner-img d-none col-sm-6 d-md-block col-lg-6">
+                        <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
+                    </div>
+                    <div class="corousel-banner-content col-sm-6 col-lg-6">
+                        <div class="corousel-banner-title">
+                            One&nbsp;<span class="primary-color">Dryad,</span>
+                            <h2>may be of the difference.</h2>
+                            Many&nbsp;
+                            <span class="primary-color">Projects</span><br>
+                            <h2>to make changes to improve the health of our planet.</h2>
+                        </div>
+                        <div class="corousel-banner-description">
+                            <br>
+                            <p>Every dollar collected with the ICO will be channelled to environmental projects whose benefits will not only be at the environmental level but will be partly deposited to give liquidity to the currency.
+                            </p>
+                            <br>
+                        
+                        </div>
+                    </div>
+                </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
             </div>
         </div>

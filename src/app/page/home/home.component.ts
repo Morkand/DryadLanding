@@ -13,12 +13,13 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('writerTitle2')
   writerTitle2:ElementRef = {} as ElementRef;
   public countdown = {D:0,H:0,M:0,S:0};
-  
+  private deadline:number = Date.parse('2023-02-25');
   ngAfterViewInit(): void {
     this.Animation(this.writerTitle1,this.writerTitle1.nativeElement.innerHTML);
     this.InitAnimation(this.writerTitle1);
     this.Animation(this.writerTitle2,this.writerTitle2.nativeElement.innerHTML,100);
     this.InitAnimation(this.writerTitle2);
+    this.initTimeCountDown();
     
   }
   private InitAnimation(writer:ElementRef) {
@@ -35,4 +36,18 @@ export class HomeComponent implements AfterViewInit {
     }
   }
 
+  private initTimeCountDown(){
+    setInterval(()=>this.Countdown(),1000);
+  }
+  private Countdown() {
+  
+    let t = this.deadline - Date.now();
+    let seconds = Math.floor((t / 1000) % 60);
+    let minutes = Math.floor((t / 1000 / 60) % 60);
+    let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+    this.countdown = {D:days,H:hours,M:minutes,S:seconds};
+    console.log(this.countdown);
+  }
  }
