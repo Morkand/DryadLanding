@@ -59,7 +59,7 @@ section{
         font-size:1.5vh;
     }
 }
-@media (min-width: 767px) and (max-width: 801px) {
+@media (min-width: 767px) and (max-width: 901px) {
     *{
         font-size:1.5vh;
     }
