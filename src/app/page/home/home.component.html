@@ -1,16 +1,18 @@
 <app-menu></app-menu>
-<div class="banner">
-    <div id="homeBanner" class="carousel slide" data-bs-ride="carousel">
+
+<div class="banner row">
+    <div id="homeBanner" class="carousel slide col-sm-12" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#homeBanner" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
-            <button type="button d-none d-md-block" data-bs-target="#homeBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button d-none d-md-block" data-bs-target="#homeBanner" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#homeBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
+        <div class="carousel-inner ">
+            <div class="carousel-item  active" data-bs-interval="10000">
                 <div class="corousel-banner row">
-                    <div class="corousel-banner-img d-none col-sm-6 d-md-block col-lg-6">
+                    <div class="corousel-banner-img d-none col-sm-6 d-md-block ">
                         <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
                     </div>
                     <div class="corousel-banner-content col-sm-6 col-lg-6">
@@ -21,11 +23,12 @@
                         </div>
                         <div class="corousel-banner-description">
                             <br>
-                            <p>Our projects are focused on reducing the damage generated to the environment and adding
+                            <p>Our projects are focused on reducing the damage generated to the environment and
+                                adding
                                 to the transformation of the world based on the Sustainable Development Goals.
                             </p>
                             <br>
-                            <button class="btn btn-xlg rounded-5 btn-primary">Buy Tokens</button>
+                            <button class="btn btn-xlg rounded-5 btn-primary btn-fill">Buy Tokens</button>
                         </div>
                     </div>
                 </div>
@@ -37,63 +40,46 @@
                         <div class="carousel-countdown-title">
                             The public ICO first phase will start with 75% discount in relation to second phase:
                         </div>
-                    </div>   
+                    </div>
                 </div>
                 <div class="corousel-banner carousel-countdown-process row">
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
-                       
-                            <circle-progress
-                            [maxPercent]="365"
-                            [percent]="countdown.D"
-                            [title]="[countdown.D.toString()]"
-                            [subtitle]="['Days']"
-                            [animationDuration]="300"
-                            ></circle-progress>
-                        
+
+                        <circle-progress [maxPercent]="365" [percent]="countdown.D" [title]="[countdown.D.toString()]"
+                            [subtitle]="['Days']" [animationDuration]="300"></circle-progress>
+
                     </div>
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
-                        
-                            <circle-progress
-                            [maxPercent]="24"
-                            [percent]="countdown.H"
-                            [title]="[countdown.H.toString()]"
-                            [subtitle]="['Hours']"
-                            [animationDuration]="300"
-                            ></circle-progress>
-                        </div>
-                    
+
+                        <circle-progress [maxPercent]="24" [percent]="countdown.H" [title]="[countdown.H.toString()]"
+                            [subtitle]="['Hours']" [animationDuration]="300"></circle-progress>
+                    </div>
+
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
-                        
-                            <circle-progress
-                            [maxPercent]="60"
-                            [percent]="countdown.M"
-                            [title]="[countdown.M.toString()]"
-                            [subtitle]="['Minutes']"
-                            [animationDuration]="300"
-                            ></circle-progress>
-                        </div>
-                    
+
+                        <circle-progress [maxPercent]="60" [percent]="countdown.M" [title]="[countdown.M.toString()]"
+                            [subtitle]="['Minutes']" [animationDuration]="300"></circle-progress>
+                    </div>
+
                     <div class="corousel-banner-content d-none d-md-block col-lg-3">
-                       
-                            <circle-progress
-                            [maxPercent]="60"
-                            [percent]="countdown.S"
-                            [title]="[countdown.S.toString()]"
-                            [subtitle]="['Seconds']"
-                            [animationDuration]="300"
-                            ></circle-progress>
-                        </div>
-                
+
+                        <circle-progress [maxPercent]="60" [percent]="countdown.S" [title]="[countdown.S.toString()]"
+                            [subtitle]="['Seconds']" [animationDuration]="300"></circle-progress>
+                    </div>
+
                 </div>
                 <div class="corousel-banner corousel-banner-progressbar row">
                     <div class="corousel-banner-content col-md-3">
-                          <h5 class="text-end p-2">Total Supply:</h5>
+                        <h5 class="text-end p-5">Total Supply:</h5>
                     </div>
                     <div class="corousel-banner-content text-center col-md-9">
                         <div class="progress text-end">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" style="background-color:rgba(0, 175, 170,1)" [style.width.%]="((5*100)/100000)" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          5/100000
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-label="Animated striped example" style="background-color:rgba(0, 175, 170,1)"
+                                [style.width.%]="((5*100)/100000)" aria-valuenow="5" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        5/100000
                     </div>
                 </div>
                 <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
@@ -113,10 +99,13 @@
                         </div>
                         <div class="corousel-banner-description">
                             <br>
-                            <p>Every dollar collected with the ICO will be channelled to environmental projects whose benefits will not only be at the environmental level but will be partly deposited to give liquidity to the currency.
+                            <p>Every dollar collected with the ICO will be channelled to environmental projects
+                                whose
+                                benefits will not only be at the environmental level but will be partly deposited to
+                                give liquidity to the currency.
                             </p>
                             <br>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -125,3 +114,81 @@
         </div>
     </div>
 </div>
+<section class="white-pappe-section  row">
+    <div class="col-md-4 col-sm-12">
+        <div class="card p-5 d-flex align-items-center">
+            <img src="../../../assets/icons/team.svg" class="card-img-top w-25" alt="...">
+            <div class="card-body">
+                <p class="card-text">Read our</p>
+                <h5 class="card-title">White Paper</h5>
+                <a href="#" class="btn btn-primary mt-4">Open Whitepaper</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="card p-5 d-flex align-items-center">
+            <img src="../../../assets/icons/iconodyddollar.png" class="card-img-top w-25" alt="iconodyddollar">
+            <div class="card-body">
+                <p class="card-text">1 DYD token price</p>
+                <h5 class="card-title">0.6 USD PHASE 1 ICO</h5>
+                <a href="#" class="btn btn-primary mt-4">Buy Tokens</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="card p-5 d-flex align-items-center">
+            <img src="../../../assets/icons/white-paper.svg" class="card-img-top w-25" alt="white-paper">
+            <div class="card-body">
+                <h5 class="card-title">0</h5>
+                <p class="card-text">ICO Participants</p>
+                <a href="#" class="btn btn-primary mt-4">Join Dyad Telegram</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects-section row">
+    <div style="background-color: rgb(0,107,104)" class="card col-md-4 col-sm-12 p-5 d-flex align-items-end">
+        <img src="../../../assets/icons/panicon.png" class="card-img-top w-25" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Carbon Credits</h5>
+        </div>
+    </div>
+    <div style="background-color: rgb(0,175,170)" class="card col-md-4 col-sm-12 p-5 d-flex align-items-end">
+        <img src="../../../assets/icons/energyicon.png" class="card-img-top w-25" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Solid waste management plant</h5>
+        </div>
+    </div>
+    <div style="background-color: rgb(76,165,133)" class="card col-md-4 col-sm-12 p-5 d-flex align-items-end">
+        <img src="../../../assets/icons/factoryicon.png" class="card-img-top w-25" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Environmental technology development</h5>
+        </div>
+    </div>
+</section>
+<section class="choose-section">
+    <div class="row">
+        <div class="title col-md-12 text-black text-center">
+            Dryad
+        </div>
+    </div>
+    <div class="row">
+        <div class="subtitle text-black col-md-12 black text-center">
+            Why choosing us?
+        </div>
+    </div>
+    <div class="row ms-5 p-5">
+        <div  class="col-sm-12 col-md-5">
+            <img src="../../../assets/dyd.png" alt="dyd" style="margin-top: -3vw;" class="w-100">
+        </div>
+        <div class="col-sm-12 col-md-5">
+            <span style="text-indent: 2vw;" class="text-left text-black">
+                We are motivated by the transformation to a responsible and sustainable world. Our currency enters
+                the digital market with strategies designed to grow and remain supporting the recovery and
+                protection of the environment. Dryad is the new currency for transactions around the world and is a
+                cryptocurrency with a business model that supports projects that respond to sustainable development
+                objectives. We offer security, transparency and good business!
+            </span>
+        </div>
+    </div>
+</section>
