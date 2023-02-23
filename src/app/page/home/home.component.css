@@ -24,6 +24,9 @@
     line-height: 3vw;
     padding-top: 4vw;
 }
+.corousel-banner-title span{
+    font-size: 3vw;
+}
 
 .banner-img {
     
@@ -51,6 +54,7 @@
 }
 .carousel-countdown-process{
     padding-top: 20vw;
+    text-align: center;
 }
 .corousel-banner-progressbar {
     margin-top: 22vw;
@@ -65,7 +69,6 @@
     font-size: 1vw;
     font-weight: 800;
     margin-top:3.6vw;
-    margin-left: -4vw;
     padding: 0 0 0 0;
 }
 .card{
@@ -90,7 +93,15 @@
 
 @media (max-width: 767px) {
     .corousel-banner,.carousel-countdown-title {
-        margin-top: 10vw;
+        margin-top: 3vh;
+    }
+    .corousel-banner-title {
+        margin-top: -1vh;
+        font-size: 3vh;
+        line-height: 3vh;
+    }
+    .corousel-banner-title span{
+        font-size: 3vh;
     }
     .carousel{
         height: 100vw;
@@ -114,7 +125,14 @@
 }
 @media (min-width: 767px) and (max-width: 801px) {
     .corousel-banner,.carousel-countdown-title {
-        margin-top: 10vw;
+        margin-top: 2vh;
+    }
+    .carousel-countdown-title {
+        font-size: 1.8vh;
+        line-height: 3vh;
+    }
+    .carousel-countdown-title span{
+        font-size: 1.8vh;
     }
     .carousel{
         height: 80vw;
@@ -130,6 +148,19 @@
     .corousel-banner-progressbar{
         margin-top: 35vw;
     }
-
+    .progress{
+        margin-left: 0;
+    }
+    
+    .carousel-countdown-process{
+        flex: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .corousel-banner.carousel-countdown-process{
+        margin: 20vh 0 0 -2vh;
+        padding: 0 0 0 0;
+    }
+    
 
 }
