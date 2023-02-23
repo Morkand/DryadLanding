@@ -31,7 +31,7 @@
     font-size: 3vw;
     font-weight: bold;
     line-height: 3vw;
-    padding-top: 4vw;
+    padding-top: 6vw;
 }
 .corousel-banner-title span{
     font-size: 3vw;
@@ -102,7 +102,7 @@
 
 @media (max-width: 767px) {
     .corousel-banner,.carousel-countdown-title {
-        margin-top: 3vh;
+        margin-top: 6vh;
     }
     .corousel-banner-title {
         margin-top: -1vh;
@@ -125,7 +125,7 @@
         object-fit: fill;
     }
     .corousel-banner-progressbar{
-        margin-top: 35vw;
+        margin-top: 36vw;
         padding: 0 0 0 0;
     }
 
@@ -140,7 +140,7 @@
         height: 2vh;
    }
    .corousel-banner-countdown-title{
-        margin-top: -5vh;
+        margin-top: -1vh;
         margin-left:-20vh;
     }      
 }
