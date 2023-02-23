@@ -49,10 +49,10 @@
     line-height: 3vw;
 }
 .carousel-countdown-process{
-    padding-top: 18vw;
+    padding-top: 20vw;
 }
 .corousel-banner-progressbar {
-    margin-top: 23vw;
+    margin-top: 22vw;
     margin-left: 3vw;
 }
 
@@ -63,16 +63,28 @@
     text-align: center;
     font-size: 1vw;
     font-weight: 800;
+    margin-top:3.6vw;
+    margin-left: -4vw;
+    padding: 0 0 0 0;
 }
 .card{
     border-color: transparent;
     background-color: transparent;
     text-align: center;
     border-radius: 0;
+    margin-top: -3vw;
+
 }
 .white-pappe-section{
     background-color: rgba(25, 50, 27, 1);
 }
+.info-section{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-image: url(../../../assets/seccionblock.jpg);
+    
+}
+
 
 @media (max-width: 767px) {
     .corousel-banner,.carousel-countdown-title {
@@ -93,7 +105,9 @@
     }
     .corousel-banner-progressbar{
         margin-top: 35vw;
+        padding: 0 0 0 0;
     }
+   
 
 }
 @media (min-width: 767px) and (max-width: 801px) {

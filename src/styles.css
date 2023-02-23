@@ -43,12 +43,12 @@
 .title{
     font-size: 2vw;
     font-weight: bold;
-    margin-top: 1vw;
+    padding-top: 1vw;
 }
 .subtitle{
     font-size: 4vw;
-    margin-top: 0.6vw;
+    padding-top: 0.6vw;
 }
 section{
-    margin-top: 3vw;
+    padding-top: 3vw;
 }
