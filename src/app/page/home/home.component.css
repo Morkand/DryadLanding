@@ -11,16 +11,18 @@
 }
 
 .banner-img {
-    width: 80%; 
+    width: 80%;
 }
 
-.carousel{
+.carousel {
     height: 55vw;
 }
-.carousel-item{
+
+.carousel-item {
     height: 55vw;
 }
-.carousel-background{
+
+.carousel-background {
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -33,54 +35,62 @@
     line-height: 3vw;
     padding-top: 6vw;
 }
-.corousel-banner-title span{
+
+.corousel-banner-title span {
     font-size: 3vw;
 }
 
 .banner-img {
-    
+
     animation: shakeY;
     animation-duration: 30s;
     animation-iteration-count: infinite;
 }
-.corousel-banner-description p{
 
-   
+.corousel-banner-description p {
+
+
     animation: fadeIn;
     animation-duration: 2s;
 }
-.corousel-banner-description button{
+
+.corousel-banner-description button {
     animation: fadeIn;
     animation-duration: 6s;
 }
-.pantano{
-    background-color:rgba(76, 165, 133,0.4);
-}    
-.carousel-countdown-title{
+
+.pantano {
+    background-color: rgba(76, 165, 133, 0.4);
+}
+
+.carousel-countdown-title {
     font-size: 3vw;
     font-weight: bold;
     line-height: 3vw;
 }
-.carousel-countdown-process{
+
+.carousel-countdown-process {
     padding-top: 20vw;
     text-align: center;
 }
+
 .corousel-banner-progressbar {
     margin-top: 22vw;
     margin-left: 3vw;
 }
 
-.progress{
-    width:40vw;
+.progress {
+    width: 40vw;
     height: 2vw;
-    background-color:rgba(76, 165, 133,0.4);
+    background-color: rgba(76, 165, 133, 0.4);
     text-align: center;
     font-size: 1vw;
     font-weight: 800;
-    margin-top:2.8vw;
+    margin-top: 2.8vw;
     padding: 0 0 0 0;
 }
-.card{
+
+.card {
     border-color: transparent;
     background-color: transparent;
     text-align: center;
@@ -88,10 +98,12 @@
     margin-top: -3vw;
 
 }
-.white-pappe-section{
+
+.white-pappe-section {
     background-color: rgba(25, 50, 27, 1);
 }
-.info-section{
+
+.info-section {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     background-image: url(../../../assets/seccionblock.jpg);
@@ -99,32 +111,146 @@
     height: 400px;
 }
 
+.blockchain-section {
+    justify-content: center;
+    z-index: 1;
+}
+
+.num-blockchain {
+    position: absolute;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 10vw;
+    color: rgba(182, 206, 208, 0.4);
+}
+
+.text-blockchain {
+    position: absolute;
+    z-index: 10;
+    padding: 0 8vw 0 8vw;
+
+}
+
+.estructura-blockchain {
+    margin: 2vw 4vw 0 4vw;
+}
+
+.left-containt-blockchain {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0 0.5vw 0 5vw;
+}
+
+.right-containt-blockchain {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 0 5vw 0 0.5vw;
+}
+
+.screen-section {
+    padding-top: -25vw;
+}
+.promo-section{
+    margin-top: 15vw;
+    padding: 0 25vw 0 25vw;
+}
+.wrapper {
+    height: 100vh;
+}
+
+.card {
+
+    position: relative;
+    background-color: transparent;
+    padding:10px;
+    width:400px;
+    border:none;
+}
+
+.content {
+
+    z-index: 10;
+}
+
+.logo {
+
+    margin-bottom: 50px;
+}
+
+
+.off {
+
+    line-height: 0px;
+}
+
+.off h1 {
+
+    font-size: 80px;
+}
+
+.off span {
+
+    margin-right: 111px;
+}
+
+
+.plus {
+    font-size: 23px;
+}
+
+
+.cross-bg {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    background-color: rgb(0,175,170);
+
+    left: 0px;
+    top: 0px;
+    opacity: 0.4;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    z-index: 1;
+}
 
 @media (max-width: 767px) {
-    .corousel-banner,.carousel-countdown-title {
+
+    .corousel-banner,
+    .carousel-countdown-title {
         margin-top: 6vh;
     }
+
     .corousel-banner-title {
         margin-top: -1vh;
         font-size: 3vh;
         line-height: 3vh;
     }
-    .corousel-banner-title span{
+
+    .corousel-banner-title span {
         font-size: 3vh;
     }
-    .carousel{
+
+    .carousel {
         height: 100vw;
     }
-    .carousel-item{
+
+    .carousel-item {
         height: 100vw;
     }
-    .carousel-background{
+
+    .carousel-background {
         width: 100%;
         height: 100%;
         transform: rotate(90deg);
         object-fit: fill;
     }
-    .corousel-banner-progressbar{
+
+    .corousel-banner-progressbar {
         margin-top: 36vw;
         padding: 0 0 0 0;
     }
@@ -133,56 +259,69 @@
         margin-top: 22vh;
         margin-left: 3vh;
     }
-   .progress{
-        margin-top:-5vh;
+
+    .progress {
+        margin-top: -5vh;
         margin-left: 5vh;
         width: 30vh;
         height: 2vh;
-   }
-   .corousel-banner-countdown-title{
+    }
+
+    .corousel-banner-countdown-title {
         margin-top: -1vh;
-        margin-left:-20vh;
-    }      
+        margin-left: -20vh;
+    }
 }
+
 @media (min-width: 767px) and (max-width: 901px) {
-    .corousel-banner,.carousel-countdown-title {
+
+    .corousel-banner,
+    .carousel-countdown-title {
         margin-top: 2vh;
     }
+
     .carousel-countdown-title {
         font-size: 1.8vh;
         line-height: 3vh;
     }
-    .carousel-countdown-title span{
+
+    .carousel-countdown-title span {
         font-size: 1.8vh;
     }
-    .carousel{
+
+    .carousel {
         height: 80vw;
     }
-    .carousel-item{
+
+    .carousel-item {
         height: 80vw;
         padding: 0 0 0 0;
     }
-    .carousel-background{
+
+    .carousel-background {
         width: 100%;
         height: 100%;
     }
-    
-    .carousel-countdown-process{
+
+    .carousel-countdown-process {
         margin-left: -10vh;
         margin-top: 4em;
         flex: auto;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .corousel-banner-progressbar {
         margin-top: 11em;
     }
-    .progress{
-        margin-top:22em;
+
+    .progress {
+        margin-top: 22em;
         margin-left: -4vh;
     }
-    .corousel-banner-countdown-title{
+
+    .corousel-banner-countdown-title {
         margin-top: 5em;
-    }    
-  
+    }
+
 }
