@@ -154,70 +154,137 @@
 .screen-section {
     padding-top: -25vw;
 }
-.promo-section{
-    margin-top: 15vw;
+
+.promo-section {
+    margin-top: 12vw;
     padding: 0 25vw 0 25vw;
 }
-.wrapper {
-    height: 100vh;
+.single-pricing{
+    margin-top: 3vw;
 }
-
-.card {
-
-    position: relative;
-    background-color: transparent;
-    padding:10px;
-    width:400px;
-    border:none;
+.single-pricing:hover {
+    box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transform: translate(0, -10px);
 }
-
-.content {
-
-    z-index: 10;
+.prices{
+    display: flex;
+    justify-content: center;
 }
-
-.logo {
-
-    margin-bottom: 50px;
-}
-
-
-.off {
-
-    line-height: 0px;
-}
-
-.off h1 {
-
-    font-size: 80px;
-}
-
-.off span {
-
-    margin-right: 111px;
-}
-
-
-.plus {
-    font-size: 23px;
-}
-
-
-.cross-bg {
-
-    height: 100%;
-    width: 100%;
+.price-label {
+    color: #fff;
+    background: rgb(76,165, 133);
+    font-size: 16px;
+    width: 100px;
+    margin-bottom: 15px;
+    display: block;
+    -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    margin-left: -20px;
     position: absolute;
-
-    background-color: rgb(0,175,170);
-
-    left: 0px;
-    top: 0px;
-    opacity: 0.4;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-    z-index: 1;
 }
 
+.price-head h2 {
+    padding-top:2vw;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+
+.price-head span {
+    display: inline-block;
+    background:  rgb(76,165, 133);
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0px;
+    
+}
+
+.single-pricing h5 {
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.single-pricing ul {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-right: 1.8vw;
+}
+
+.single-pricing ul li {
+    line-height: 35px;
+}
+
+.single-pricing a {
+    background: none;
+    border: 2px solid rgba(0, 175, 170, 1);
+    border-radius: 5000px;
+    color: rgba(0, 175, 170, 1);
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 45px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+
+.single-pricing a:hover,
+.single-pricing a:focus {
+    background: rgba(0, 175, 170, 1);
+    color: #fff;
+    border: 2px solid rgba(0, 175, 170, 1);
+}
+
+.single-pricing-white {
+    background: rgb(25, 50, 47);
+    border-radius: 20px;
+}
+
+.single-pricing-white ul li {
+    color: #fff;
+}
+
+.single-pricing-white h2 {
+    color: #fff;
+}
+
+.single-pricing-white h1 {
+    color: #fff;
+}
+
+.single-pricing-black {
+    border: 1px solid rgb(76,165, 133);
+    border-radius: 20px;
+}
+.single-pricing-white h5 {
+    color: #fff;
+}
+.single-pricing-black ul li {
+    color: black;
+}
+
+.single-pricing-black h2 {
+    color: black;
+}
+
+.single-pricing-black h1 {
+    color: black;
+}
+
+.single-pricing-black h5 {
+    color: black;
+}
 @media (max-width: 767px) {
 
     .corousel-banner,
