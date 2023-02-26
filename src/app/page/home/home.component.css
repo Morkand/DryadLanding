@@ -281,7 +281,11 @@
 .single-pricing-black h1 {
     color: black;
 }
-
+.price-active{
+    width: 100%;
+    background-color: gold;
+    border-radius: 20px 20px 0 0;
+}
 .single-pricing-black h5 {
     color: black;
 }
@@ -338,6 +342,7 @@
         margin-top: -1vh;
         margin-left: -20vh;
     }
+  
 }
 
 @media (min-width: 767px) and (max-width: 901px) {
