@@ -38,22 +38,19 @@
 }
 .btn-xlg{
     font-size: 2vw;
-    padding: 0.1vw 1vw 0.1vw 1vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
 }
 
 .title{
     font-size: 2vw;
-    font-weight: bold;
-    padding-top: 1vw;
+    font-weight: bold; 
 }
 .subtitle{
     font-size: 4vw;
     padding-top: 0.6vw;
     line-height: 3vw;
 }
-section{
-    padding-top: 3vw;
-}
+
 @media (max-width: 767px) {
    
     *{

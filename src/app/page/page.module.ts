@@ -25,7 +25,7 @@ const routes: Routes = [
       "backgroundOpacity": 0.6,
       "backgroundStrokeWidth": 16,
       "backgroundPadding": 7,
-      "radius": 85,
+      "radius": 130,
       "space": -1,
       "unitsFontWeight": "500",
       "outerStrokeGradient": false,

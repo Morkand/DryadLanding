@@ -1,95 +1,35 @@
-.banner {
-    margin-top: -5vw;
-    background-color: rgb(25, 50, 47);
-    z-index: 1;
+.banner{
+    position: relative;
+    margin-top: -2vw;
 }
-
-.corousel-banner {
-    position: absolute;
-    z-index: 2;
-    padding: 12vw 12vw 0 12vw;
+.carousel{
+   width: 100%;
 }
-
-.banner-img {
-    width: 80%;
+.banner-img{
+    width: 85%;
 }
+.banner1 .col-md-6{
 
-.carousel {
-    height: 55vw;
+    text-align: left;
+    line-height:2.8vw;
+    font-size: 2.8vw;
 }
-
-.carousel-item {
-    height: 55vw;
-}
-
-.carousel-background {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: fill;
-}
-
-.corousel-banner-title {
-    font-size: 3vw;
+.banner1 .col-md-6 span{
+    font-size: 2.8vw;
     font-weight: bold;
-    line-height: 3vw;
-    padding-top: 6vw;
+    white-space: nowrap;
+}
+.banner1 .col-md-6 p{
+    line-height:1.5vw;
 }
 
-.corousel-banner-title span {
-    font-size: 3vw;
+.progress{
+    height:2vw;
+    background-color: rgb(76,165, 133,0.6);
 }
-
-.banner-img {
-
-    animation: shakeY;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
+.progress-bar{
+    background-color: transparent;
 }
-
-.corousel-banner-description p {
-
-
-    animation: fadeIn;
-    animation-duration: 2s;
-}
-
-.corousel-banner-description button {
-    animation: fadeIn;
-    animation-duration: 6s;
-}
-
-.pantano {
-    background-color: rgba(76, 165, 133, 0.4);
-}
-
-.carousel-countdown-title {
-    font-size: 3vw;
-    font-weight: bold;
-    line-height: 3vw;
-}
-
-.carousel-countdown-process {
-    padding-top: 20vw;
-    text-align: center;
-}
-
-.corousel-banner-progressbar {
-    margin-top: 22vw;
-    margin-left: 3vw;
-}
-
-.progress {
-    width: 40vw;
-    height: 2vw;
-    background-color: rgba(76, 165, 133, 0.4);
-    text-align: center;
-    font-size: 1vw;
-    font-weight: 800;
-    margin-top: 2.8vw;
-    padding: 0 0 0 0;
-}
-
 .card {
     border-color: transparent;
     background-color: transparent;
@@ -289,111 +229,6 @@
 .single-pricing-black h5 {
     color: black;
 }
-@media (max-width: 767px) {
-
-    .corousel-banner,
-    .carousel-countdown-title {
-        margin-top: 6vh;
-    }
-
-    .corousel-banner-title {
-        margin-top: -1vh;
-        font-size: 3vh;
-        line-height: 3vh;
-    }
-
-    .corousel-banner-title span {
-        font-size: 3vh;
-    }
-
-    .carousel {
-        height: 100vw;
-    }
-
-    .carousel-item {
-        height: 100vw;
-    }
-
-    .carousel-background {
-        width: 100%;
-        height: 100%;
-        transform: rotate(90deg);
-        object-fit: fill;
-    }
-
-    .corousel-banner-progressbar {
-        margin-top: 36vw;
-        padding: 0 0 0 0;
-    }
-
-    .corousel-banner-progressbar {
-        margin-top: 22vh;
-        margin-left: 3vh;
-    }
-
-    .progress {
-        margin-top: -5vh;
-        margin-left: 5vh;
-        width: 30vh;
-        height: 2vh;
-    }
-
-    .corousel-banner-countdown-title {
-        margin-top: -1vh;
-        margin-left: -20vh;
-    }
-  
-}
-
-@media (min-width: 767px) and (max-width: 901px) {
-
-    .corousel-banner,
-    .carousel-countdown-title {
-        margin-top: 2vh;
-    }
-
-    .carousel-countdown-title {
-        font-size: 1.8vh;
-        line-height: 3vh;
-    }
-
-    .carousel-countdown-title span {
-        font-size: 1.8vh;
-    }
-
-    .carousel {
-        height: 80vw;
-    }
-
-    .carousel-item {
-        height: 80vw;
-        padding: 0 0 0 0;
-    }
-
-    .carousel-background {
-        width: 100%;
-        height: 100%;
-    }
-
-    .carousel-countdown-process {
-        margin-left: -10vh;
-        margin-top: 4em;
-        flex: auto;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .corousel-banner-progressbar {
-        margin-top: 11em;
-    }
-
-    .progress {
-        margin-top: 22em;
-        margin-left: -4vh;
-    }
-
-    .corousel-banner-countdown-title {
-        margin-top: 5em;
-    }
-
+.bg-pantone{
+    background-color: rgb(76,165, 133);
 }

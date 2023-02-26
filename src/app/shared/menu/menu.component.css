@@ -1,20 +1,24 @@
 .navbar {
    position: absolute;
-   z-index: 5;
+   z-index: 999;
    width: 100%;
-   padding-top: 2vw;
-   padding-left: 6vw;
-   padding-right: 3vw;
+   background-color: transparent;
    animation: fadeIn;
    animation-duration: 3s;
 }
-.navbar-nav{
+
+.container-fluid {
+   background-color: transparent;
+}
+
+.navbar-nav {
    margin-right: 20vw;
 }
 
-.nav-link{
+.nav-link {
    font-size: 1.2vw;
 }
+
 .navbar-toggler {
    color: white !important;
    color: rgb(0, 175, 170) !important;
@@ -76,48 +80,57 @@ a {
    font-weight: 600;
    vertical-align: top;
 }
+
 .custom-toggler .navbar-toggler-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
- }
- .custom-toggler .navbar-toggler-icon:hover {
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 175, 170)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
- }
- .custom-toggler .navbar-toggler {
+}
+
+.custom-toggler .navbar-toggler {
    border-color: white !important;
- } 
- .btn-metamask{
+}
+
+.btn-metamask {
    width: 12vw;
    height: auto;
- }
+}
 
- @media (max-width: 767px) {
-   .navbar-nav{
+@media (max-width: 767px) {
+   .navbar-nav {
       padding: 0;
-      background-color:rgba(1, 1, 1, 0.6);
+      background-color: rgba(1, 1, 1, 0.6);
       width: 100%;
       text-align: center;
    }
-   .nav-link{
+
+   .nav-link {
       width: 100%;
       font-size: 6vw;
    }
-   .btn-metamask{
+
+   .btn-metamask {
       width: 100%;
    }
 
 }
+
 @media (min-width: 767px) and (max-width: 801px) {
-   .navbar-nav{
+   .navbar-nav {
       padding: 0;
-      background-color:rgba(1, 1, 1, 0.6);
+      background-color: rgba(1, 1, 1, 0.6);
       width: 100%;
       text-align: center;
    }
-   .nav-link{
+
+   .nav-link {
       width: 100%;
       font-size: 6vw;
    }
-   .btn-metamask{
+
+   .btn-metamask {
       width: 100%;
    }
 }

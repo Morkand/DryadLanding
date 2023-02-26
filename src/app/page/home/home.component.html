@@ -1,29 +1,29 @@
-<app-menu></app-menu>
-
-<section class="banner row">
-    <div id="homeBanner" class="carousel slide col-sm-12" data-bs-ride="carousel">
+<section class="banner">
+    <app-menu></app-menu>
+    <div id="homeBanner" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#homeBanner" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
-            <button type="button d-none d-md-block" data-bs-target="#homeBanner" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#homeBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner ">
+        <div class="carousel-inner">
             <div class="carousel-item  active" data-bs-interval="10000">
-                <div class="corousel-banner row">
-                    <div class="corousel-banner-img d-none col-sm-6 d-md-block ">
-                        <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
-                    </div>
-                    <div class="corousel-banner-content col-sm-6 col-lg-6">
-                        <div class="corousel-banner-title">
+                <img src="../../../assets/banner1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="row banner1" style="padding-bottom: 5vw;">
+                        <div class="col-md-6">
+                            <img class="banner-img text-left align-top" src="../../../assets/logo/logo-light.png" alt=""
+                                srcset="">
+                        </div>
+                        <div class="col-md-6 p-4">
                             <span #writerTitle1 class="primary-color">Dryad</span> is the new digital asset with a
                             network of businesses
-                            <br><span #writerTitle2 class="primary-color">eco-responsible</span>.
-                        </div>
-                        <div class="corousel-banner-description">
+                            <br><span #writerTitle2 class="primary-color">eco-responsible</span>
                             <br>
-                            <p>Our projects are focused on reducing the damage generated to the environment and
+                            <p>
+                                <br>
+                                Our projects are focused on reducing the damage generated to the environment and
                                 adding
                                 to the transformation of the world based on the Sustainable Development Goals.
                             </p>
@@ -32,89 +32,96 @@
                         </div>
                     </div>
                 </div>
-                <img src="../../../assets/banner1.png" class="d-block carousel-background w-100" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-                <div class="corousel-banner row">
-                    <div class="corousel-banner-content col-sm-12">
-                        <div class="carousel-countdown-title">
-                            The public ICO first phase will start with 75% discount in relation to second phase:
+                <img src="../../../assets/banner1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom:5vw;">
+                    <div class="row">
+                        <div class="title text-center col-sm-12">
+                            The Crownsale phase 1 will start in:
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <circle-progress [maxPercent]="365" [percent]="countdown.D"
+                                [title]="[countdown.D.toString()]" [subtitle]="['Days']"
+                                [animationDuration]="300"></circle-progress>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <circle-progress [maxPercent]="24" [percent]="countdown.H"
+                                [title]="[countdown.H.toString()]" [subtitle]="['Hours']"
+                                [animationDuration]="300"></circle-progress>
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <circle-progress [maxPercent]="60" [percent]="countdown.M"
+                                [title]="[countdown.M.toString()]" [subtitle]="['Minutes']"
+                                [animationDuration]="300"></circle-progress>
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <circle-progress [maxPercent]="60" [percent]="countdown.S"
+                                [title]="[countdown.S.toString()]" [subtitle]="['Seconds']"
+                                [animationDuration]="300"></circle-progress>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <br>
+                            <h5 class="text-end p-1">Total Supply:</h5>
+                        </div>
+                        <div class="col-md-10">
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped"
+                                    [style.background-color]="'rgb(76,165, 133)'" role="progressbar"
+                                    aria-label="Success striped" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 p-3">
+                            <br>
+                            <button style="padding: 0.5vw 1vw 0.5vw 1vw;"
+                                class="btn btn-xlg rounded-5 btn-primary btn-fill">Buy Tokens</button>
                         </div>
                     </div>
                 </div>
-                <div class="corousel-banner carousel-countdown-process row">
-                    <div class="corousel-banner-content d-none d-md-block col-md-3">
-
-                        <circle-progress [maxPercent]="365" [percent]="countdown.D" [title]="[countdown.D.toString()]"
-                            [subtitle]="['Days']" [animationDuration]="300"></circle-progress>
-
-                    </div>
-                    <div class="corousel-banner-content d-none d-md-block col-md-3">
-
-                        <circle-progress [maxPercent]="24" [percent]="countdown.H" [title]="[countdown.H.toString()]"
-                            [subtitle]="['Hours']" [animationDuration]="300"></circle-progress>
-                    </div>
-
-                    <div class="corousel-banner-content d-none d-md-block col-md-3">
-
-                        <circle-progress [maxPercent]="60" [percent]="countdown.M" [title]="[countdown.M.toString()]"
-                            [subtitle]="['Minutes']" [animationDuration]="300"></circle-progress>
-                    </div>
-
-                    <div class="corousel-banner-content d-none d-md-block col-md-3">
-
-                        <circle-progress [maxPercent]="60" [percent]="countdown.S" [title]="[countdown.S.toString()]"
-                            [subtitle]="['Seconds']" [animationDuration]="300"></circle-progress>
-                    </div>
-
-                </div>
-                <div class="corousel-banner  corousel-banner-progressbar row">
-                    <div class="col-md-4">
-                        <h5 class="text-end corousel-banner-countdown-title p-5">Total Supply:</h5>
-                    </div>
-                    <div class="text-center col-md-8">
-                        <div class="progress text-center">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-label="Animated striped example" style="background-color:rgba(0, 175, 170,1)"
-                                [style.width.%]="((5*100)/100000)" aria-valuenow="5" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5/100000
-                    </div>
-                </div>
-                <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-                <div class="corousel-banner row">
-                    <div class="corousel-banner-img d-none col-sm-6 d-md-block col-lg-6">
-                        <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
-                    </div>
-                    <div class="corousel-banner-content col-sm-6 col-lg-6">
-                        <div class="corousel-banner-title">
+                <img src="../../../assets/banner1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="row banner1" style="padding-bottom: 5vw;">
+                        <div class="col-md-6">
+                            <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
+                        </div>
+                        <div class="col-md-6 p-4">
                             One&nbsp;<span class="primary-color">Dryad,</span>
-                            <h2>may be of the difference.</h2>
+                            <h1>may be of the difference.</h1>
                             Many&nbsp;
                             <span class="primary-color">Projects</span><br>
-                            <h2>to make changes to improve the health of our planet.</h2>
-                        </div>
-                        <div class="corousel-banner-description">
-                            <br>
-                            <p>Every dollar collected with the ICO will be channelled to environmental projects
+                            <h1>to make changes to improve the health of our planet.</h1>
+                            <p>
+                                <br>
+                                Every dollar collected with the ICO will be channelled to environmental projects
                                 whose
                                 benefits will not only be at the environmental level but will be partly deposited to
                                 give liquidity to the currency.
                             </p>
-                            <br>
-
                         </div>
                     </div>
                 </div>
-                <img src="../../../assets/banner1.png" class="d-block carousel-background  w-100" alt="...">
             </div>
         </div>
     </div>
 </section>
-<section class="white-pappe-section row">
+<section class="white-pappe-section row p-5">
     <div class="col-md-4 col-sm-12">
         <div class="card p-5 d-flex align-items-center">
             <img src="../../../assets/icons/white-paper.svg" class="card-img-top w-25" alt="...">
@@ -159,7 +166,7 @@
             <h5 class="card-title">Solid waste management plant</h5>
         </div>
     </div>
-    <div style="background-color: rgba(76,165,133,0.4)" class="card col-md-4 col-sm-12 p-5 ">
+    <div style="background-color: rgba(76,165,133)" class="card col-md-4 col-sm-12 p-5 ">
         <img src="../../../assets/icons/factoryicon.png" class="card-img-top w-25" alt="...">
         <div class="card-body">
             <h5 class="card-title">Environmental technology development</h5>
@@ -231,7 +238,7 @@
                     <div class="num-blockchain">
                         01
                     </div>
-                    <div class="text-left text-black text-blockchain">
+                    <div class="text-left text-black w-75 text-blockchain">
                         <h3 class="text-black">A 100% project token</h3>
                         The objective of the token is to finance future projects betting on green technologies and
                         create
@@ -242,7 +249,7 @@
                     <div class="num-blockchain">
                         02
                     </div>
-                    <div class="text-right text-black text-blockchain">
+                    <div class="text-right text-black w-75 text-blockchain">
                         <h3 class="text-black">A 100% project token</h3>
                         The objective of the token is to finance future projects betting on green technologies and
                         create
@@ -260,7 +267,7 @@
                     <div class="num-blockchain">
                         03
                     </div>
-                    <div class="text-left text-black text-blockchain">
+                    <div class="text-left text-black w-75 text-blockchain">
                         <h3 class="text-black">A 100% project token</h3>
                         The objective of the token is to finance future projects betting on green technologies and
                         create
@@ -271,7 +278,7 @@
                     <div class="num-blockchain">
                         04
                     </div>
-                    <div class="text-right text-black text-blockchain">
+                    <div class="text-right text-black w-75 text-blockchain">
                         <h3 class="text-black">A 100% project token</h3>
                         The objective of the token is to finance future projects betting on green technologies and
                         create
@@ -282,7 +289,7 @@
         </div>
     </div>
 </section>
-<section class="promo-section">
+<section class="promo-section p-5">
     <div class="row">
         <div class="title col-md-12 text-black text-center">
             Dryad
@@ -293,13 +300,14 @@
             Token prices will be divided into two phases
         </div>
     </div>
-    <div class="row prices text-center">									
-        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+    <div class="row prices text-center">
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
+            data-wow-offset="0">
             <div class="single-pricing single-pricing-white">
                 <div class="price-active bg-warning p-1">
                     <h6>ACTIVO</h6>
                 </div>
-                <div class="price-head">								
+                <div class="price-head">
                     <h2>1 DYD</h2>
                     <span></span>
                     <span></span>
@@ -317,10 +325,11 @@
                 </ul>
                 <a href="#">Buy Tokens</a>
             </div>
-        </div>			  
-        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+            data-wow-offset="0">
             <div class="single-pricing single-pricing-black">
-                <div class="price-head">								
+                <div class="price-head">
                     <h2>1 DYD</h2>
                     <span></span>
                     <span></span>
@@ -338,6 +347,28 @@
                 </ul>
                 <a href="#">Buy Tokens</a>
             </div>
-        </div><!--- END COL -->	
+        </div><!--- END COL -->
+    </div>
+</section>
+<section class="bg-pantone p-5">
+    <div class="row p-5">
+        <div class="col-md-1 col-sm-6 p-5">
+            <div class="align-middleinput-group">
+                <i style="font-size: 3vw;background-color:white;color:rgb(76,165, 133);border-radius: 999px;border: 1px solid white;"
+                    class="p-3 bi-envelope"></i>
+            </div>
+        </div>
+        <div style="font-size:1.5vw;" class="col-md-5 col-sm-6 p-5">
+            Keep up to date with our progress.
+            Subscribe for e-mail updates.
+        </div>
+        <div class="col-md-6 col-sm-12 p-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="fulanito" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="example.com" aria-label="Server">
+            </div>
+
+        </div>
     </div>
 </section>
