@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HighchartsChartModule } from 'highcharts-angular';
+
 
 const routes: Routes = [
   {
@@ -21,6 +23,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     SharedModule,
+    HighchartsChartModule,
     NgCircleProgressModule.forRoot({
       "backgroundOpacity": 0.6,
       "backgroundStrokeWidth": 16,

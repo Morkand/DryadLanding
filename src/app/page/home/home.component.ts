@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-
-
+import * as Highcharts from 'highcharts';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,12 +12,76 @@ export class HomeComponent implements AfterViewInit {
   writerTitle2: ElementRef = {} as ElementRef;
   public countdown = { D: 0, H: 0, M: 0, S: 0 };
   private deadline: number = Date.parse('2023-02-25');
+  Highcharts = Highcharts;
+  pie: any  = {
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+    },
+    title: {
+      text: 'Browser market shares in March, 2022',
+      align: 'left'
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+      point: {
+        valueSuffix: '%'
+      }
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false
+        },
+        showInLegend: true
+      }
+    },
+    legend: {
+      layout: 'vetical'
+    },
+    navigation:{
+      animation:true
+    },
+    series: [{
+      name: 'Brands',
+      colorByPoint: true,
+      data: [{
+        name: 'Chrome',
+        y: 74.77,
+        sliced: true,
+        selected: true
+      }, {
+        name: 'Edge',
+        y: 12.82
+      }, {
+        name: 'Firefox',
+        y: 4.63
+      }, {
+        name: 'Safari',
+        y: 2.44
+      }, {
+        name: 'Internet Explorer',
+        y: 2.02
+      }, {
+        name: 'Other',
+        y: 3.28
+      }]
+    }]
+  };
+
   ngAfterViewInit(): void {
     this.Animation(this.writerTitle1, this.writerTitle1.nativeElement.innerHTML);
     this.InitAnimation(this.writerTitle1);
     this.Animation(this.writerTitle2, this.writerTitle2.nativeElement.innerHTML, 100);
     this.InitAnimation(this.writerTitle2);
     this.initTimeCountDown();
+    let data = document.getElementsByClassName('highcharts-credits')[0];
 
   }
   private InitAnimation(writer: ElementRef) {
@@ -51,4 +113,5 @@ export class HomeComponent implements AfterViewInit {
       this.countdown = { D: days, H: hours, M: minutes, S: seconds };
     }
   }
+ 
 }
