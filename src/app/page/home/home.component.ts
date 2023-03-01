@@ -3,7 +3,7 @@ import * as Highcharts from 'highcharts';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements AfterViewInit {
   @ViewChild('writerTitle1')
@@ -12,87 +12,118 @@ export class HomeComponent implements AfterViewInit {
   writerTitle2: ElementRef = {} as ElementRef;
   public countdown = { D: 0, H: 0, M: 0, S: 0 };
   private deadline: number = Date.parse('2023-02-25');
-  Highcharts = Highcharts;
-  pie: any  = {
+  HighchartsTokenDistribution: any = Highcharts;
+  pieTokenDistribution: any = {
     chart: {
       plotBackgroundColor: null,
       plotBorderWidth: null,
       plotShadow: false,
-      type: 'pie'
+      type: 'pie',
     },
     title: {
       text: 'Browser market shares in March, 2022',
-      align: 'left'
+      align: 'left',
     },
     tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
     },
     accessibility: {
       point: {
-        valueSuffix: '%'
-      }
+        valueSuffix: '%',
+      },
     },
     plotOptions: {
       pie: {
         allowPointSelect: true,
         cursor: 'pointer',
         dataLabels: {
-          enabled: false
+          enabled: false,
         },
-        showInLegend: true
-      }
+        showInLegend: true,
+      },
     },
     legend: {
-      layout: 'vetical'
+      layout: 'vetical',
     },
-    navigation:{
-      animation:true
+    navigation: {
+      animation: true,
     },
-    series: [{
-      name: 'Brands',
-      colorByPoint: true,
-      data: [{
-        name: 'Chrome',
-        y: 74.77,
-        sliced: true,
-        selected: true
-      }, {
-        name: 'Edge',
-        y: 12.82
-      }, {
-        name: 'Firefox',
-        y: 4.63
-      }, {
-        name: 'Safari',
-        y: 2.44
-      }, {
-        name: 'Internet Explorer',
-        y: 2.02
-      }, {
-        name: 'Other',
-        y: 3.28
-      }]
-    }]
+    series: [
+      {
+        name: 'Brands',
+        colorByPoint: true,
+        data: [
+          {
+            name: 'Chrome',
+            y: 74.77,
+            sliced: true,
+            selected: true,
+          },
+          {
+            name: 'Edge',
+            y: 12.82,
+          },
+          {
+            name: 'Firefox',
+            y: 4.63,
+          },
+          {
+            name: 'Safari',
+            y: 2.44,
+          },
+          {
+            name: 'Internet Explorer',
+            y: 2.02,
+          },
+          {
+            name: 'Other',
+            y: 3.28,
+          },
+        ],
+      },
+    ],
   };
 
   ngAfterViewInit(): void {
-    this.Animation(this.writerTitle1, this.writerTitle1.nativeElement.innerHTML);
+    this.Animation(
+      this.writerTitle1,
+      this.writerTitle1.nativeElement.innerHTML
+    );
     this.InitAnimation(this.writerTitle1);
-    this.Animation(this.writerTitle2, this.writerTitle2.nativeElement.innerHTML, 100);
+    this.Animation(
+      this.writerTitle2,
+      this.writerTitle2.nativeElement.innerHTML,
+      100
+    );
     this.InitAnimation(this.writerTitle2);
     this.initTimeCountDown();
-    let data = document.getElementsByClassName('highcharts-credits')[0];
-
+    let credits = <HTMLElement>(
+      document.getElementsByClassName('highcharts-credits')[0]
+    );
+    credits.style.display = 'none';
+    credits = <HTMLElement>(
+      document.getElementsByClassName('highcharts-credits')[1]
+    );
+    credits.style.display = 'none';
   }
   private InitAnimation(writer: ElementRef) {
     writer.nativeElement.innerHTML = '';
-
   }
-  private Animation(writer: ElementRef, text: string, speed: number = 200, i: number = -1): void {
+  private Animation(
+    writer: ElementRef,
+    text: string,
+    speed: number = 200,
+    i: number = -1
+  ): void {
     let titleText: string = text;
     if (i < titleText.length) {
-      writer.nativeElement.innerHTML = writer.nativeElement.innerHTML.replace('<span style="font-size: 2.8vw;animation: flash;animation-duration: 2s;animation-iteration-count: infinite;">|</span>', '');
-      writer.nativeElement.innerHTML += titleText.charAt(i) + '<span style="font-size: 2.8vw;animation: flash;animation-duration: 2s;animation-iteration-count: infinite;">|</span>';
+      writer.nativeElement.innerHTML = writer.nativeElement.innerHTML.replace(
+        '<span style="font-size: 2.8vw;animation: flash;animation-duration: 2s;animation-iteration-count: infinite;">|</span>',
+        ''
+      );
+      writer.nativeElement.innerHTML +=
+        titleText.charAt(i) +
+        '<span style="font-size: 2.8vw;animation: flash;animation-duration: 2s;animation-iteration-count: infinite;">|</span>';
       i++;
       setTimeout(() => this.Animation(writer, titleText, speed, i), speed);
     }
@@ -102,7 +133,6 @@ export class HomeComponent implements AfterViewInit {
     setInterval(() => this.Countdown(), 1000);
   }
   private Countdown() {
-
     let t = this.deadline - Date.now();
     if (t >= 0) {
       let seconds = Math.floor((t / 1000) % 60);
@@ -113,5 +143,4 @@ export class HomeComponent implements AfterViewInit {
       this.countdown = { D: days, H: hours, M: minutes, S: seconds };
     }
   }
- 
 }
