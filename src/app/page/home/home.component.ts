@@ -19,10 +19,15 @@ export class HomeComponent implements AfterViewInit {
       plotBorderWidth: null,
       plotShadow: false,
       type: 'pie',
-    },
+    }
+    ,
     title: {
       text: 'Browser market shares in March, 2022',
-      align: 'left',
+      align: 'center',
+      style: {
+        fontFamily: 'Akzidenz',
+        fontSize: '2vw'
+      }
     },
     tooltip: {
       pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
@@ -79,7 +84,7 @@ export class HomeComponent implements AfterViewInit {
             name: 'Other',
             y: 3.28,
           },
-        ],
+        ]
       },
     ],
   };
