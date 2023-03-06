@@ -148,4 +148,5 @@ export class HomeComponent implements AfterViewInit {
       this.countdown = { D: days, H: hours, M: minutes, S: seconds };
     }
   }
+
 }
