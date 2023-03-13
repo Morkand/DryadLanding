@@ -503,3 +503,84 @@
   background-size: 80vw;
   height: 60vw;
 }
+.img-circle{
+  border-radius: 50%;
+}
+/*pulse*/
+.greenBg {
+  background-color: rgba(76,165,133,1) !important;
+  background-image: linear-gradient(90deg, rgba(76,165,133,1), rgba(0,175,170,1));
+}
+.intro-banner-vdo-play-btn{
+  height:30vw;
+  width:30vw;
+  position:relative;
+  text-align:center;
+  margin:-30px 0 0 -30px;
+  border-radius:100px;
+  z-index:1
+}
+.intro-banner-vdo-play-btn i{
+  line-height:56px;
+  font-size:30px
+}
+.intro-banner-vdo-play-btn .ripple{
+  position:absolute;
+  width:14vw;
+  height:14vw;
+  z-index:-1;
+  left:50%;
+  top:50%;
+  opacity:0;
+  margin:-80px 0 0 -80px;
+  border-radius:50%;
+  -webkit-animation:ripple 1.8s infinite;
+  animation:ripple 1.8s infinite
+}
+
+@-webkit-keyframes ripple{
+  0%{
+      opacity:1;
+      -webkit-transform:scale(0);
+      transform:scale(0)
+  }
+  100%{
+      opacity:0;
+      -webkit-transform:scale(1);
+      transform:scale(1)
+  }
+}
+@keyframes ripple{
+  0%{
+      opacity:1;
+      -webkit-transform:scale(0);
+      transform:scale(0)
+  }
+  100%{
+      opacity:0;
+      -webkit-transform:scale(1);
+      transform:scale(1)
+  }
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(2){
+  animation-delay:.3s;
+  -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(3){
+  animation-delay:.6s;
+  -webkit-animation-delay:.6s
+}
+
+/***************************/
+.partners{
+  background-image: url('../../../assets/partner.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vw;
+}
+.partner-logo{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
