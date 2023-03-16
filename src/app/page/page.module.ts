@@ -33,7 +33,7 @@ const routes: Routes = [
       "unitsFontWeight": "500",
       "outerStrokeGradient": false,
       "outerStrokeWidth": 10,
-      "outerStrokeColor": "rgb(182,206,209)",
+      "outerStrokeColor": "rgb(155,214,0)",
       "outerStrokeGradientStopColor": "#006b68",
       "innerStrokeColor": "rgb(0,175,170)",
       "innerStrokeWidth": 2,

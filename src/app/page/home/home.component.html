@@ -13,7 +13,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="row banner1" style="padding-bottom: 5vw;">
                         <div class="col-md-6">
-                            <img class="banner-img text-left align-top" src="../../../assets/logo/dryad-lg-single.png" alt=""
+                            <img class="animate__animated animate__pulse animate__infinite	infinite banner-img text-left align-top" src="../../../assets/logo/dryad-lg-single.png" alt=""
                                 srcset="">
                         </div>
                         <div class="col-md-6 p-4">
@@ -46,28 +46,28 @@
 
                             <circle-progress [maxPercent]="365" [percent]="countdown.D"
                                 [title]="[countdown.D.toString()]" [subtitle]="['Days']"
-                                [animationDuration]="300"></circle-progress>
+                                [animationDuration]="0"></circle-progress>
 
                         </div>
                         <div class="col-md-3">
 
                             <circle-progress [maxPercent]="24" [percent]="countdown.H"
                                 [title]="[countdown.H.toString()]" [subtitle]="['Hours']"
-                                [animationDuration]="300"></circle-progress>
+                                [animationDuration]="0"></circle-progress>
                         </div>
 
                         <div class="col-md-3">
 
                             <circle-progress [maxPercent]="60" [percent]="countdown.M"
                                 [title]="[countdown.M.toString()]" [subtitle]="['Minutes']"
-                                [animationDuration]="300"></circle-progress>
+                                [animationDuration]="0"></circle-progress>
                         </div>
 
                         <div class="col-md-3">
 
                             <circle-progress [maxPercent]="60" [percent]="countdown.S"
                                 [title]="[countdown.S.toString()]" [subtitle]="['Seconds']"
-                                [animationDuration]="300"></circle-progress>
+                                [animationDuration]="0"></circle-progress>
                         </div>
                     </div>
                     <div class="row">
@@ -79,7 +79,7 @@
                             <br>
                             <div class="progress">
                                 <div class="progress-bar"
-                                    [style.background-color]="'rgb(0,175, 170)'" role="progressbar"
+                                    [style.background-color]="'rgb(0,175,170)'" role="progressbar"
                                     aria-label="Success striped" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
@@ -99,7 +99,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <div class="row banner1" style="padding-bottom: 5vw;">
                         <div class="col-md-6">
-                            <img class="banner-img" src="../../../assets/logo/logo-light.png" alt="" srcset="">
+                            <img class="banner-img animate__animated animate__shakeY animate__infinite" style="--animate-duration:12s;" src="../../../assets/logo/dryad-lg-coin.png" alt="" srcset="">
                         </div>
                         <div class="col-md-6 p-4">
                             One&nbsp;<span class="primary-color">Dryad,</span>
@@ -201,7 +201,7 @@
 </section>
 <section class="screen-section bg-white d-none d-md-block" style="height:38.1vw;">
     <div class="col-md-12 d-none d-md-block text-center">
-        <img style="z-index: 2;" class="pt-4 w-50" src="../../../assets/pc.png" alt="pc" srcset="">
+        <img style="z-index: 2;" class="pt-4 w-0" src="../../../assets/pc.png" alt="pc" srcset="">
     </div>
 </section>
 <section style="z-index: 1;" class="info-section p-5">
@@ -259,7 +259,7 @@
             </div>
             <div class="text-right text-black  row blockchain-background">
                 <div class="col-sm-12">
-                    <img class="w-50" src="../../../assets/2.png" alt="" srcset="">
+                    <img class="w-0" src="../../../assets/2.png" alt="" srcset="">
                 </div>
             </div>
             <div class="row">
@@ -501,7 +501,7 @@
 <section class="team p-5">
     <div class="row">
         <div style="margin-left:25%;margin-top:13%;" class="col-md-3">
-            <!-- <img class="img-circle w-50" src="../../../assets/blank.jpg" alt="team-1" srcset=""> -->
+            <!-- <img class="img-circle w-0" src="../../../assets/blank.jpg" alt="team-1" srcset=""> -->
             <a href="#" class="intro-banner-vdo-play-btn greenBg" target="_blank">
                 <i class="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>
                 <span class="ripple greenBg"></span>
