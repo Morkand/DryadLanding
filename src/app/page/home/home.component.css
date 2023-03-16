@@ -30,7 +30,7 @@
 
 .progress {
   height: 2vw;
-  background-color: rgb(76, 165, 133, 0.6);
+  background-color: rgb(76, 165, 133, 0.4);
 }
 
 .progress-bar {
@@ -45,9 +45,14 @@
   margin-top: -3vw;
 
 }
-
+.choose-section{
+  background-image: url('../../../assets/bg-pc.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
 .white-pappe-section {
-  background-color: rgba(25, 50, 27, 1);
+  background-color: rgba(25, 50, 47, 1);
 }
 
 .info-section {
@@ -87,7 +92,7 @@
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  padding: 0 0.5vw 0 5vw;
+  padding: 0 2vw 5vw 15vw;
 }
 
 .right-containt-blockchain {
@@ -95,11 +100,14 @@
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  padding: 0 5vw 0 0.5vw;
+  padding: 0 15vw 0 2vw;
 }
 
 .screen-section {
-  padding-top: -25vw;
+  background-image: url('../../../assets/bg-choose-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% ;
 }
 
 .promo-section {
@@ -121,13 +129,16 @@
   display: flex;
   justify-content: center;
 }
-
+.wow{
+  width: 22%;
+}
 .price-label {
-  color: #fff;
-  background: rgb(76, 165, 133);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0,175,170) ;
   font-size: 16px;
   width: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: -1vw;
   display: block;
   -webkit-clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
   clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
@@ -145,7 +156,7 @@
 
 .price-head span {
   display: inline-block;
-  background: rgb(76, 165, 133);
+  background: rgb(0,175,170);
   width: 6px;
   height: 6px;
   border-radius: 30px;
@@ -193,25 +204,25 @@
 .single-pricing a:hover,
 .single-pricing a:focus {
   background: rgba(0, 175, 170, 1);
-  color: #fff;
+  color:rgb(25,50,47);
   border: 2px solid rgba(0, 175, 170, 1);
 }
 
 .single-pricing-white {
-  background: rgb(25, 50, 47);
+  background: rgb(255, 214, 0);
   border-radius: 20px;
 }
 
 .single-pricing-white ul li {
-  color: #fff;
+  color:rgb(25,50,47);
 }
 
 .single-pricing-white h2 {
-  color: #fff;
+  color:rgb(25,50,47);
 }
 
 .single-pricing-white h1 {
-  color: #fff;
+  color:rgb(25,50,47);
 }
 
 .single-pricing-black {
@@ -220,7 +231,7 @@
 }
 
 .single-pricing-white h5 {
-  color: #fff;
+  color:rgb(25,50,47);
 }
 
 .single-pricing-black ul li {
@@ -237,7 +248,7 @@
 
 .price-active {
   width: 100%;
-  background-color: gold;
+  background-color: rgb(0,175,170) ;
   border-radius: 20px 20px 0 0;
 }
 
@@ -310,9 +321,9 @@
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
-  background-color: white;
-  left: 50%;
+  width: 1px;
+  background-color: rgb(76, 165, 133);
+  left: 49.6%;
   margin-left: -1.5px;
 }
 
@@ -343,7 +354,7 @@
   left: 50%;
   margin-left: -25px;
   background-color: rgb(76, 165, 133);
-  border: 3px solid #ffffff;
+  border: 1px solid #ffffff;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;

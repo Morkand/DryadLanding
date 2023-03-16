@@ -18,10 +18,13 @@
 }
 
 .btn-primary.btn-fill:hover {
-    background-color: rgb(0, 107, 104);
+    background-color: rgb(255,214,0);
     border-color: rgb(76, 165, 133);
     color:white
     
+}
+.btn-hover-yw:hover{
+    background-color: rgba(255,214,0,0.75) !important;
 }
 .btn-primary{
     border-color: rgb(76, 165, 133);

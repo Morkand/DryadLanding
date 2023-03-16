@@ -11,7 +11,7 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('writerTitle2')
   writerTitle2: ElementRef = {} as ElementRef;
   public countdown = { D: 0, H: 0, M: 0, S: 0 };
-  private deadline: number = Date.parse('2023-02-25');
+  private deadline: number = Date.parse('2023-03-25');
   HighchartsTokenDistribution: any = Highcharts;
   pieTokenDistribution: any = {
     chart: {
