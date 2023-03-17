@@ -13,6 +13,32 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  let navbar = document.getElementsByClassName('navbar');
+  let a = document.getElementsByClassName('nav-link');
+  let logo = document.getElementsByClassName('logoImg');
+  // trigger this function every time the user scrolls
+  window.onscroll =  function (event) {
+      let scroll = window.pageYOffset;
+      if (scroll < 100) {
+          // green
+          navbar[0].style.backgroundColor = 'transparent';
+          logo[0].src='./assets/logo/lg-white.png';
+          for (const i of a) {
+            i.style.color = 'white';
+          }
+        } else{
+          navbar[0].style.backgroundColor='rgb(255,255,255)';
+          logo[0].src='./assets/logo/lg-black.png';
+          navbar[0].style.height= '5vw';
+          for (const i of a) {
+            i.style.color = 'black';
+            
+          }
+
+      }
+  }
+</script>
 <app-root></app-root>
 </body>
 

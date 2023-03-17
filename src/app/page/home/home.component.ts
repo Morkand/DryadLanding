@@ -14,7 +14,7 @@ export class HomeComponent implements AfterViewInit {
   public showTeamInfo:string[] = ['none','none','none','none','none'];
   private deadline: number = Date.parse('2023-03-25');
   HighchartsTokenDistribution: any = Highcharts;
-  pieTokenDistribution: any = {
+  pieTokenDistribution1: any = {
     chart: {
       plotBackgroundColor: null,
       plotBorderWidth: null,
@@ -23,7 +23,7 @@ export class HomeComponent implements AfterViewInit {
     }
     ,
     title: {
-      text: 'Browser market shares in March, 2022',
+      text: 'Token Distribution',
       align: 'center',
       style: {
         fontFamily: 'Akzidenz',
@@ -54,36 +54,116 @@ export class HomeComponent implements AfterViewInit {
     navigation: {
       animation: true,
     },
+    colors:['#006B68','#4CA585','#00AFAA','#B6CED0','#19322F','#FFD600'],
+    series: [
+      {
+        name: 'Brands',
+        colorByPoint: true,
+        
+        data: [
+          {
+            name: 'Airdrop',
+            y: 1,
+            
+          
+          },
+          {
+            name: 'Phase 1 ICO',
+            y: 10,
+          },
+          {
+            name: 'Phase 2 ICO',
+            y: 20,
+          },
+          {
+            name: 'DRYAD Official Launch',
+            y: 30,
+            sliced: true,
+            selected: true,
+          },
+          {
+            name: 'Founders',
+            y: 9,
+          },
+          {
+            name: 'Backup',
+            y: 30
+          },
+        ]
+      },
+    ],
+  };
+  pieTokenDistribution2: any = {
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie',
+    }
+    ,
+    title: {
+      text: 'Funds Distribution',
+      align: 'center',
+      style: {
+        fontFamily: 'Akzidenz',
+        fontSize: '2vw'
+      }
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+    },
+    accessibility: {
+      point: {
+        valueSuffix: '%',
+      },
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: false,
+        },
+        showInLegend: true,
+      },
+    },
+    legend: {
+      layout: 'vetical',
+    },
+    navigation: {
+      animation: true,
+    },
+    colors:['#006B68','#4CA585','#00AFAA','#B6CED0','#19322F','#FFD600'],
     series: [
       {
         name: 'Brands',
         colorByPoint: true,
         data: [
           {
-            name: 'Chrome',
-            y: 74.77,
+            name: 'Project Investment ',
+            y: 40,
             sliced: true,
             selected: true,
           },
           {
-            name: 'Edge',
-            y: 12.82,
+            name: 'Founders',
+            y: 20,
           },
           {
-            name: 'Firefox',
-            y: 4.63,
+            name: 'Development Team',
+            y:10,
           },
           {
-            name: 'Safari',
-            y: 2.44,
+            name: 'Backup',
+            y: 10,
           },
           {
-            name: 'Internet Explorer',
-            y: 2.02,
+            name: 'Consultants',
+            y: 5,
           },
           {
-            name: 'Other',
-            y: 3.28,
+            name: 'Liquidity Injection',
+            y: 15,
           },
         ]
       },
