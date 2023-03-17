@@ -512,7 +512,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120vw;
-  height: 70vw;
+  height: 75vw;
 }
 .img-circle{
   border-radius: 50%;
@@ -617,6 +617,9 @@
 }
 .partner-logo{
   background-color: rgba(0, 175, 170, 0.8);
+}
+.contact{
+  background-color: rgba(76,165,133,1);
 }
 
 
