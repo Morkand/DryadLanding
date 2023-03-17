@@ -11,6 +11,7 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('writerTitle2')
   writerTitle2: ElementRef = {} as ElementRef;
   public countdown = { D: 0, H: 0, M: 0, S: 0 };
+  public showTeamInfo:string[] = ['none','none','none','none','none'];
   private deadline: number = Date.parse('2023-03-25');
   HighchartsTokenDistribution: any = Highcharts;
   pieTokenDistribution: any = {

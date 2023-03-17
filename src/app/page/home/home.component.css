@@ -511,8 +511,8 @@
   background-image: url('../../../assets/team-back.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80vw;
-  height: 60vw;
+  background-size: 120vw;
+  height: 70vw;
 }
 .img-circle{
   border-radius: 50%;
@@ -527,13 +527,38 @@
   width:30vw;
   position:relative;
   text-align:center;
-  margin:-30px 0 0 -30px;
+  margin:-15px 0 0 -30px;
   border-radius:100px;
   z-index:1
+
 }
 .intro-banner-vdo-play-btn i{
   line-height:56px;
   font-size:30px
+}
+.info-team{
+  display: none;
+  position: absolute;
+  width: 15vw;
+  margin-left: 3.5vw;
+  background-color: rgba(76,165,133,1);
+}
+.info-team>.card-header{
+  background-color: rgba(0,107,104,1);
+}
+.info-team>.card-body{
+  background-color: rgba(182,206,208,1);
+}
+.info-team>.card-body>h5{
+  color:rgba(0,107,104,1) !important;
+}
+.info-team>.card-body>p{
+  color:rgba(0,107,104,1) !important;
+}
+.team-photo{
+  position: absolute;
+  width: 10%;
+  z-index: 777;
 }
 .intro-banner-vdo-play-btn .ripple{
   position:absolute;
@@ -591,7 +616,7 @@
   height: 45vw;
 }
 .partner-logo{
-  background-color: rgba(76, 165, 133, 0.8);
+  background-color: rgba(0, 175, 170, 0.8);
 }
 
 
